@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PindTransit - Bus Tracking System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🚌 PindTransit</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/driver" class="btn btn-primary">Driver</a></li>
+                <li><a href="/passenger" class="btn btn-success">Passenger</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Real-Time Bus Tracking for Your City</h1>
+            <p>Know where your bus is. Every second. Every route.</p>
+            <div class="cta-buttons">
+                <a href="/driver" class="btn btn-primary btn-lg">I'm a Driver</a>
+                <a href="/passenger" class="btn btn-success btn-lg">I'm a Passenger</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why PindTransit?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Track buses live on map. Updates every 30 seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Low Bandwidth</h3>
+                    <p>Works on 2G networks. SMS fallback available.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast & Simple</h3>
+                    <p>No complex setup. Works on any smartphone.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable</h3>
+                    <p>$20-40/month for entire city. Sustainable solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h4>Driver Starts App</h4>
+                    <p>Driver enters bus ID and starts the app</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h4>Location Broadcasting</h4>
+                    <p>Bus location updates every 30 seconds</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h4>Passenger Views Map</h4>
+                    <p>Passengers see bus in real-time on map</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <h4>ETA Calculation</h4>
+                    <p>See when bus arrives at your stop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 PindTransit. Made for India's Transport.</p>
+        </div>
+    </footer>
+</body>
+</html>
